@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <h1 id="title">Form Pengisian Data Diri</h1>
+    <p id="description">Silahkan Isi Data Diri Anda</p>
+    <p><a href="https://survey-form.freecodecamp.rocks">Ini contohnya</a></p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="name" id="name-label">Masukan Nama: <input id="name" name="name-label" type="text" placeholder="Nama" required /></label>
+        <label for="email" id="email-label">Masukan Email: <input id="email" name="email-label" type="email" placeholder="Email" required /></label>
+        <label for="number" id="number-label">Umur: <input id="number" name="number-label" type="number" min="1" max="120" placeholder="Umur" required /></label>
+        <label for="fat">Berat Badan: <input id="fat" name="fat" type="number" min="1" max="150 "placeholder="Berat" required /></label>
+        <label for="tall">Tinggi Badan: <input id="tall" name="tall" type="number" min="1" max="200 "placeholder="Tinggi" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Pekerjaan Anda : 
+            <select id="dropdown" name="dropdown">
+              <option value="">(Pilih salah satu)</option>
+              <option value="1">Mahasiswa/siswa</option>
+              <option value="2">Wiraswasta</option>
+              <option value="3">Pegawai Negri</option>
+              <option value="4">Pegawai Swasta</option>
+              <option value="5">Dosen/Guru Negri</option>
+              <option value="6">Dosen/Guru Swasta</option>
+              <option value="7">Polisi/Tentara/Satpol PP</option>
+              <option value="8">Seniman</option>
+              <option value="9">Lain-lain</option>
+            </select>
+          </fieldset>
+     <fieldset>
+        <legend>Apakah form ini terlihat bagus? (required/wajib)</legend>
+        <label for="iya"><input id="iya" type="radio" name="account-type" class="inline" value="nilai" checked /> Iya</label>
+        <label for="iya1"><input id="iya1" type="radio" name="account-type" class="inline" value="nilai"/> Iya Banget</label>
+        <label for="iya2"><input id="iya2" type="radio" name="account-type" class="inline" value="nilai"/> Pasti lah</label>
+        <label for="iya3"><input id="iya3" type="radio" name="account-type" class="inline" value="nilai"/> Jelas Banget</label>
+        <label for="iya4"><input id="iya4" type="radio" name="account-type" class="inline" value="nilai"/> Gaada Lawan</label>
+    </fieldset>
+    <fieldset>
+        <legend>Olahraga Kesukaan anda</legend>
+        <label for="olahraga"><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" checked>Basket</label>
+        <label for="olahraga"><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" >Sepakbola</label>
+        <label for="olahraga"><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" >Futsal</label>
+        <label for="olahraga"><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" >Bulutangkis</label>
+        <label for="olahraga"><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" >Baseball</label>
+        <label for="olahraga"><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" >Tinju</label>
+        <label for="olahraga"><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" >Game Online</label>
+        <label for="olahraga"><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" >Belajar</label>
+        <label for="olahraga" ><input id="olahraga" type="checkbox" name="olahraga" value="kesukaan" >Lain-lain</label>
+    </fieldset>
+    <fieldset>
+        <label for="opini">Pendapat anda mengenai pembuat web</label>
+        <textarea id="opinion" name="opinion" placeholder="masukan yang baik aja!!!"></textarea>
+    </fieldset>
+    <button type="submit" value="submit" id="submit">Submit</button>
+    </form>
+    </body>
+</head>
